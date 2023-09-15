@@ -8,8 +8,15 @@
 }
 input{
   background-color: #5792cf !important;
-  height: 30px;
+  height: 37px;
   border: 0;
+}
+
+select{
+  background-color: #5792cf !important;
+  height: 37px;
+  border: 0;
+
 }
 
 .App-logo {
@@ -49,6 +56,11 @@ a:hover{
 
 .tu{
   text-decoration: underline;
+}
+
+.active{
+  background-color: white;
+  color: #5792cf;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

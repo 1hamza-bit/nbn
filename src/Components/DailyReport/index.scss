@@ -22,16 +22,31 @@
     justify-content: flex-start;
     // font-size: 18px;
    h5{ padding: 0;
-    margin: 8px;
-    width: 100px;
+    margin: 10px;
+    width: 120px;
    }
    input{
-    width: 250px;
-    min-width: 250px;
-    
+    width: 290px;
+    min-width: 290px;
    }
+   select{
+    width: 240px;
+    min-width: 240px;
+    color: aliceblue;
+   }
+
+  
+  /* Style the down arrow icon */
+  select::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FF0000; /* Change the color to your desired color */
+  }
    .date{
-    width: 200px !important;
-    min-width: 200px !important;
+    width: 240px !important;
+    min-width: 240px !important;
    }
 }

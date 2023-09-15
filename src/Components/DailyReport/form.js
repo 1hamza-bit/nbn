@@ -16,6 +16,17 @@ const Form = () => {
 
             <div className="labelform">
                 <h5>Password</h5>
+                <select
+                // value={this.state.restock.toString()}
+                onChange={() => {}}
+                // disabled
+              >
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
+            </div>
+            <div className="labelform">
+                <h5>Password</h5>
                 <input  />
             </div>
             <div className="labelform">
@@ -35,6 +46,8 @@ const Form = () => {
                 <h5>Password</h5>
                 <input  />
             </div>
+
+         
          </div>
         </div>
     )
