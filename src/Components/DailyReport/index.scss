@@ -1,0 +1,37 @@
+.entry{
+    // border: 1px solid #5792cf;
+    // justify-content: space-evenly;
+    // text-align: center;
+    // align-self: center;
+    vertical-align: middle;
+    max-width: 30%;
+    padding: 1% 2%;
+    
+    margin: 4% 30%;
+
+    width: 50%;
+    text-align: left;
+}
+
+
+
+.labelform{
+    display: flex;
+    align-items: center;
+    // justify-content: flex-start;
+    justify-content: flex-start;
+    // font-size: 18px;
+   h5{ padding: 0;
+    margin: 8px;
+    width: 100px;
+   }
+   input{
+    width: 250px;
+    min-width: 250px;
+    
+   }
+   .date{
+    width: 200px !important;
+    min-width: 200px !important;
+   }
+}

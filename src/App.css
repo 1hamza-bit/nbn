@@ -1,5 +1,15 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  /* display: flex; */
+  align-items: center;
+  color: #5792cf !important;
+  justify-content: center;
+  font-size: 24px;
+}
+input{
+  background-color: #5792cf !important;
+  height: 30px;
+  border: 0;
 }
 
 .App-logo {
@@ -7,6 +17,39 @@
   pointer-events: none;
 }
 
+.df{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  margin: 15px;
+}
+
+nav{
+  background-color: #5792cf !important;
+
+ 
+}
+
+li{
+  padding: 4px 20px !important;
+  list-style-type: none;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+  transition: color .4s ease-in-out;
+}
+a:hover{
+  color: rgb(195, 195, 195);
+}
+
+.tu{
+  text-decoration: underline;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +79,5 @@
     transform: rotate(360deg);
   }
 }
+
+
