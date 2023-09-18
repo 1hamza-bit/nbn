@@ -62,6 +62,22 @@ a:hover{
   background-color: white;
   color: #5792cf;
 }
+
+
+th{
+  border-left: 1px solid #5792cf;
+  color:#5792cf !important;
+  font-weight: 600 !important;
+  border-bottom:  2px solid #5792cf !important;
+}
+
+td{
+  border-left: 1px solid #5792cf;
+  border-bottom: 1px solid #5792cf !important;
+  color:#5792cf !important;
+
+  padding: 8px !important;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

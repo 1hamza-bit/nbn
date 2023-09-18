@@ -49,4 +49,83 @@
     width: 240px !important;
     min-width: 240px !important;
    }
+   .submit{
+    margin-top: 5% !important;
+    margin-left: 75% !important;
+}
+}
+
+
+
+.edit{
+  vertical-align: middle;
+  max-width: 30%;
+  padding: 1% 2%;
+  
+  margin: 4% 30%;
+
+  width: 50%;
+  text-align: left;
+  border: 1px solid #5792cf;
+}
+
+.editform{
+  display: flex;
+  align-items: center;
+  // justify-content: flex-start;
+  justify-content: flex-start;
+  // font-size: 18px;
+  svg{
+    color: #5792cf;
+  }
+ h5{ padding: 0;
+  margin: 10px;
+  width: 120px;
+  border: 1px solid #5792cf;
+  font-weight: 400;
+  padding: 2%;
+ }
+ input{
+  width: 290px;
+  min-width: 290px;
+  background-color: white !important;
+  color: #5792cf;
+  border: 1px solid #5792cf;
+  
+ }
+ select{
+  width: 240px;
+  min-width: 240px;
+  color: #5792cf;
+  background-color: white !important;
+  border: 1px solid #5792cf;
+
+ }
+
+
+/* Style the down arrow icon */
+select::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FF0000; /* Change the color to your desired color */
+}
+ .date{
+  width: 240px !important;
+  min-width: 240px !important;
+ }
+ .submit{
+  margin-top: 5% !important;
+   margin-left: 5% !important;
+}
+}
+
+table{
+  a{
+    color: #5792cf;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }

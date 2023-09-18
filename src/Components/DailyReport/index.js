@@ -1,7 +1,8 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, makeStyles } from "@mui/material";
 import "./index.scss"
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "@emotion/styled";
+import EditForm from "./edit";
 
 
 const columns = [
@@ -30,24 +31,7 @@ const useStyles = styled({
     },
   });
 
-  const rows = [
-    {
-      dat: '2023-09-16',
-      employeeName: 'John Doe',
-      designation: 'Manager',
-      rateHover: '$25',
-      workingHours: '40',
-      total: '$1000',
-      overtime: '5',
-      overtimeCollections: '$125',
-      drivingTraveling: '$50',
-      sickness: '2',
-      otherAllowances: '$75',
-      grandTotal: '$1252',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    // Add more rows as needed
-  ];
+
 
   const StyledTableCell = styled(TableCell)({
     borderLeft: '1px solid rgba(0, 0, 0, 0.1)',
@@ -56,11 +40,38 @@ const useStyles = styled({
 
 const Daily = () => {
     const classes = useStyles();
+    const [edit, setEdit]=useState(false);
 
+    const handleEdit = () => {
+        setEdit(true)
+    }
+
+    const rows = [
+        {
+          dat: '2023-09-16',
+          employeeName: 'John Doe',
+          designation: 'Manager',
+          rateHover: '$25',
+          workingHours: '40',
+          total: '$1000',
+          overtime: '5',
+          overtimeCollections: '$125',
+          drivingTraveling: '$50',
+          sickness: '2',
+          otherAllowances: '$75',
+          grandTotal: '$1252',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          edit : <><a onClick={handleEdit}>Edit</a></>,
+        },
+        // Add more rows as needed
+      ];
 
     return (
+        edit ? 
+        <EditForm /> :
         <>
-            <h1 className="tu">Daily Reposrt</h1>
+        
+            <h1 className="tu">Daily Report</h1>
 
             <Paper className={classes.root}>
       <TableContainer className={classes.container}>
@@ -70,7 +81,7 @@ const Daily = () => {
               {columns.map((column) => (
                 <TableCell
                   key={column.id}
-                  align="center"
+                  align="center" className="bl" 
                   style={{ width: column.width }}
                 >
                   {column.label}
@@ -82,7 +93,7 @@ const Daily = () => {
             {rows.map((row, rowIndex) => (
               <TableRow key={rowIndex}>
                 {columns.map((column) => (
-                  <TableCell key={column.id} align="center">
+                  <TableCell key={column.id} align="center" className="bl">
                     {row[column.id]}
                   </TableCell>
                 ))}
@@ -93,6 +104,7 @@ const Daily = () => {
       </TableContainer>
     </Paper>
         </>
+
     )
 }
 
